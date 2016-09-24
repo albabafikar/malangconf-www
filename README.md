@@ -22,3 +22,5 @@ Malang Conf Project (2017)
     │
     └─ vendor/
 ```
+
+**Name Space** : ```MalangPhp\Site\Conf```
