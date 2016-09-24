@@ -1,2 +1,20 @@
 # malangconf-www
-Landing Page Malang Conf 2017
+
+Malang Conf Project (2017)
+
+```
+(Root)/
+    ├─ Applications/
+    │       ├─ Configs/
+    │       └─ Resources/
+    │
+    ├─ assets/
+    │       ├─ css/
+    │       ├─ fonts/
+    │       ├─ images/
+    │       └─ js/
+    │
+    ├─ templates/
+    │
+    └─ vendor/
+```
