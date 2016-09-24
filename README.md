@@ -2,7 +2,7 @@
 
 Malang Conf Project (2017)
 
-[![Build Status](https://travis-ci.org/MalangPHP/malangconf-www.svg?branch=master)](https://travis-ci.org/MalangPHP/malangconf-www)
+[![Build Status](https://travis-ci.org/MalangPHP/malangconf-www.svg?branch=dev)](https://travis-ci.org/MalangPHP/malangconf-www)
 
 ```
 (Root)/
