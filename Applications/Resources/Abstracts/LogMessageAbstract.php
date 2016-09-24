@@ -15,42 +15,42 @@ namespace MalangPhp\Site\Conf\Abstracts;
 abstract class LogMessageAbstract
 {
     /**
-     * @const int
+     * @const int error notice
      */
     const NOTICE   = E_NOTICE;
 
     /**
-     * @const int
+     * @const int error warning
      */
     const WARNING  = E_WARNING;
 
     /**
-     * @const int
-     */
-    const CRITICAL = E_ERROR;
-
-    /**
-     * @const int
+     * @const int error fatal
      */
     const ERROR = E_ERROR;
 
     /**
-     * @const int
+     * @const int alias of self::ERROR
+     */
+    const CRITICAL = E_ERROR;
+
+    /**
+     * @const int error deprecated
      */
     const DEPRECATED = E_DEPRECATED;
 
     /**
-     * @const int
+     * @const int unrecoverable error FAIL
      */
-    const FAIL    = -2;
+    const FAIL    = E_RECOVERABLE_ERROR;
 
     /**
-     * @const int
+     * @const int just save info as empty value selector
      */
     const INFO     = 0;
 
     /**
-     * @const int
+     * @const int ~self::INFO
      */
     const DEBUG    = -1;
 
@@ -58,13 +58,13 @@ abstract class LogMessageAbstract
      * @var array
      */
     protected $traced = [
-        E_NOTICE  => [],
-        E_WARNING => [],
-        E_ERROR   => [],
-        E_DEPRECATED => [],
-        -2 => [],
-        0  => [],
-        -1 => [],
+        self::NOTICE  => [],
+        self::WARNING => [],
+        self::ERROR   => [],
+        self::DEPRECATED => [],
+        self::FAIL    => [],
+        self::INFO    => [],
+        self::DEBUG   => [],
     ];
 
     /**
