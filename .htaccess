@@ -1,0 +1,40 @@
+# ----------------------------------------------------------------
+# MALANG CONF - htaccess (Apache)
+# ---------------------------------------------------------------
+
+# [DEV] Options For Development
+Options Indexes FollowSymLinks Multiviews
+
+# ----------------------------------------------------------------
+# SECURITY ENGAGEMENT
+# ----------------------------------------------------------------
+
+# prevent all accesed start with
+# dot(.) to accesed by external
+# -------------------------------
+<Files "^.+">
+    Deny From All
+</Files>
+
+# set default 403 forbidden into
+# Current url - best experience
+# Routes
+# -------------------------------
+ErrorDocument 403 /
+
+# ----------------------------------------------------------------
+# ROUTES HANDLER
+# ----------------------------------------------------------------
+
+# Handle Index With <main.php>
+# -------------------------------
+
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # use main.php as indexing
+    RewriteRule ^(.*)$ main.php [QSA,L]
+    # handle index.html & main.php to solved as main.php
+    RewriteRule ^(index\.s?html?|main\.php)?$ main.php [QSA,L]
+</IfModule>
