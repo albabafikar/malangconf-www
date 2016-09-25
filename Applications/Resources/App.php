@@ -12,4 +12,10 @@ namespace MalangPhp\Site\Conf;
  */
 class App
 {
+    /**
+     * App constructor.
+     */
+    public function __construct()
+    {
+    }
 }
