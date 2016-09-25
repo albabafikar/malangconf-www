@@ -14,7 +14,9 @@
     <!-- array must be use short syntax array() == [] -->
     <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
     <!-- Path To Check
-        / Check Only Applications Directory
+        // Check Only Applications Directory
+        // Ignore View Cache & Data
     -->
+    <exclude-pattern>Applications/(Data|View|Cache)/*</exclude-pattern>
     <file>Applications</file>
 </ruleset>
