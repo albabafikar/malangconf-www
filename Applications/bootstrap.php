@@ -1,4 +1,7 @@
 <?php
+/**
+ * PSR 0 Auto Loader
+ */
 return spl_autoload_register(function ($className) {
     $baseDir   = __DIR__ . '/Resources/';
     /**
