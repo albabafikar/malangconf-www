@@ -7,6 +7,7 @@
 return [
     // ENVIRONMENT `development`
     'development' => [
+        'debug'    => true,
         'database' => [
             'driver'   => 'sqlite',
             'prefix'   => 'prefix',
@@ -31,6 +32,7 @@ return [
     ],
     // ENVIRONMENT `production`
     'production' => [
+        'debug'    => true,
         'database' => [
             'driver'   => 'sqlite',
             'prefix'   => 'prefix',

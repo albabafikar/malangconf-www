@@ -14,7 +14,7 @@ use Slim\Collection;
  * Class ConfigCollection
  * @package MalangPhp\Site\Conf\Component
  */
-class ConfigCollection
+class ConfigCollection implements \Countable
 {
     /**
      * @var Collection(ArrayStringParser[])
@@ -80,9 +80,40 @@ class ConfigCollection
     }
 
     /**
-     * Getting All data Config
+     * Getting Array Keys of Collection
      *
      * @return array
+     */
+    public function keys()
+    {
+        return $this->configCollection->keys();
+    }
+
+    /**
+     * Check if Config array contains key name
+     *
+     * @param string $name
+     * @return bool
+     */
+    public function has($name)
+    {
+        return $this->configCollection->has($name);
+    }
+
+    /**
+     * Count Collection
+     *
+     * @return int
+     */
+    public function count()
+    {
+        return $this->configCollection->count();
+    }
+
+    /**
+     * Getting All data Config
+     *
+     * @return ArrayStringParser[]
      */
     public function all()
     {

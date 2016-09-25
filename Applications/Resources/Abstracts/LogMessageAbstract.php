@@ -75,7 +75,7 @@ abstract class LogMessageAbstract
      */
     public function __construct($message = null, $type = self::DEBUG)
     {
-        $this->addDebug('Log initiated');
+        $this->addInfo('Log initiated');
         if (!$message) {
             return;
         }
@@ -518,5 +518,61 @@ abstract class LogMessageAbstract
     public function getAll()
     {
         return $this->traced;
+    }
+
+    /**
+     * @param string $message
+     */
+    public function debug($message)
+    {
+        $this->addDebug($message);
+    }
+
+    /**
+     * @param string $message
+     */
+    public function deprecated($message)
+    {
+        $this->addDeprecated($message);
+    }
+
+    /**
+     * @param string $message
+     */
+    public function error($message)
+    {
+        $this->addError($message);
+    }
+
+    /**
+     * @param string $message
+     */
+    public function info($message)
+    {
+        $this->addInfo($message);
+    }
+
+    /**
+     * @param string $message
+     */
+    public function fail($message)
+    {
+        $this->addFail($message);
+    }
+
+    /**
+     * @param string $message
+     */
+    public function notice($message)
+    {
+        $this->addNotice($message);
+    }
+
+    /**
+     * @param string $message
+     */
+    public function warning($message)
+    {
+        $this->addWarning($message);
     }
 }

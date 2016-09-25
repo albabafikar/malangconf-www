@@ -68,6 +68,20 @@ trait ArrayBracketResolver
 
     /**
      * Fetch from array
+     * Internal method used to retrieve values from global arrays.
+     * alias of fetchFrom[];
+     *
+     * @param   mixed   $index   Index for item to be fetched from $array
+     * @param   mixed   $default Default return if not exist
+     * @return  mixed
+     */
+    public function get($index, $default = null)
+    {
+        return $this->fetchFromArray($index, $default);
+    }
+
+    /**
+     * Fetch from array
      *
      * Internal method used to retrieve values from global arrays.
      *

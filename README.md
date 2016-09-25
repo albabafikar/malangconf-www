@@ -9,16 +9,17 @@ Malang Conf Project (2017)
 ```
 (Root)/
     ├─ Applications/
+    │       ├─ Cache/
     │       ├─ Configs/
-    │       └─ Resources/
+    │       ├─ Data/
+    │       ├─ Resources/
+    │       └─ View/
     │
     ├─ assets/
     │       ├─ css/
     │       ├─ fonts/
     │       ├─ images/
     │       └─ js/
-    │
-    ├─ templates/
     │
     └─ vendor/
 ```
