@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "de7094a9abb37a224100d4ffd3ec0249",
-    "content-hash": "d5d16b2a08a8e95aa33cc90081d12d59",
+    "hash": "7ad54a9bd6d463a304d8256a0e4d84e2",
+    "content-hash": "3673e3123bde057df9247735c4a87fba",
     "packages": [
         {
             "name": "aufa/encryption",
@@ -1041,6 +1041,55 @@
                 "routing"
             ],
             "time": "2016-06-12 19:08:51"
+        },
+        {
+            "name": "pentagonal/hookable",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pentagonal/Hookable.git",
+                "reference": "b66f094f5c12ecf8fd82e643cf4f2486d8d1fee6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pentagonal/Hookable/zipball/b66f094f5c12ecf8fd82e643cf4f2486d8d1fee6",
+                "reference": "b66f094f5c12ecf8fd82e643cf4f2486d8d1fee6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.5.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Pentagonal\\Hookable\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "awan",
+                    "email": "nawa@yahoo.com",
+                    "homepage": "https://www.pentagonal.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Hook able Library like a WordPress uses",
+            "homepage": "https://www.pentagonal.org/",
+            "keywords": [
+                "hooks",
+                "library",
+                "module",
+                "utility",
+                "wordpress"
+            ],
+            "time": "2016-07-08 04:15:51"
         },
         {
             "name": "pentagonal/phpass",

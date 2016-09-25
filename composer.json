@@ -8,6 +8,7 @@
         "slim/slim": "^3.5",
         "slim/php-view": "^2.1",
         "pentagonal/phpass": "^1.0",
+        "pentagonal/hookable": "^1.0",
         "phpmailer/phpmailer": "^5.2",
         "aura/session": "^2.0",
         "aufa/encryption": "^1.0",
